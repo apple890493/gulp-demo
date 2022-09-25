@@ -1,0 +1,13 @@
+$primary-color: #303030;
+$secondary-color: #0A0A0A;
+$danger-color: red;
+
+body {
+  color: $danger-color;
+  background:$secondary-color;
+}
+
+.card {
+  transform:  rotate(90deg);
+  filter: blur(10px);
+}

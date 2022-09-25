@@ -1,0 +1,21 @@
+{
+  "name": "demo-gulp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "nono <nono@gitlab.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "bootstrap": "^5.2.1"
+  }
+}
