@@ -1,0 +1,13 @@
+body {
+  color: red;
+  background: #0A0A0A;
+}
+
+.card {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+/*# sourceMappingURL=all.css.map */
