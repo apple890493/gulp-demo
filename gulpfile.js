@@ -108,6 +108,11 @@ gulp.task('watchFile', function () {
   gulp.watch('./source/js/**/*.js', gulp.series('babel'));
 });
 
+gulp.task('deploy', function () {
+  return gulp.src('./public/**/*')
+    .pipe($plug.ghPages());
+});
+
 gulp.task('build', gulp.series('clean', 'copyJade', 'buildSass', 'babel', 'bower', 'vendorJs', 'image-min'));
 
 gulp.task('default', gulp.series('copyJade', 'buildSass', 'babel', 'bower', 'vendorJs', gulp.parallel('browser-sync', 'watchFile')));
