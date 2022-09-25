@@ -113,7 +113,7 @@ gulp.task('deploy', function () {
     .pipe($plug.ghPages());
 });
 
-gulp.task('build', gulp.series('clean', 'copyJade', 'buildSass', 'babel', 'bower', 'vendorJs', 'image-min'));
+gulp.task('build', gulp.series('clean', 'copyJade', 'buildSass', 'babel', 'bower', 'vendorJs'));
 
 gulp.task('default', gulp.series('copyJade', 'buildSass', 'babel', 'bower', 'vendorJs', gulp.parallel('browser-sync', 'watchFile')));
 
